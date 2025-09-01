@@ -1,0 +1,17 @@
+﻿# ETH Multi-Timeframe Signal (Node + TypeScript)
+
+Fetches ETH candles with reliable fallbacks and prints latest candles.
+- Intraday: Binance → Bybit (may require VPN in Iran)
+- Daily: CoinGecko fallback (works without VPN)
+
+## Setup
+`ash
+git clone https://github.com/Mehranabd/eth-mtf-signal.git
+cd eth-mtf-signal
+npm install
+npm run start
+
+### 2) Stop CRLF warnings (optional but nice)
+`powershell
+@"
+* text=auto
